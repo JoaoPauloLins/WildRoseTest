@@ -94,7 +94,7 @@ export default class GameManager extends cc.Component {
           [firstLineResult, -1, -1],
           [firstLineResult, -1, -1],
           [firstLineResult, -1, -1]
-        ]
+        ];
         break;
 
       case 2:
@@ -104,7 +104,7 @@ export default class GameManager extends cc.Component {
           [-1, firstLineResult, -1],
           [-1, firstLineResult, -1],
           [-1, firstLineResult, -1]
-        ]
+        ];
         break;
 
       case 3:
@@ -114,7 +114,7 @@ export default class GameManager extends cc.Component {
           [-1, -1, firstLineResult],
           [-1, -1, firstLineResult],
           [-1, -1, firstLineResult]
-        ]
+        ];
         break;
     }
 
@@ -135,7 +135,7 @@ export default class GameManager extends cc.Component {
           [firstLineResult, secondLineResult, -1],
           [firstLineResult, secondLineResult, -1],
           [firstLineResult, secondLineResult, -1]
-        ]
+        ];
         break;
 
       case 2:
@@ -145,7 +145,7 @@ export default class GameManager extends cc.Component {
           [-1, firstLineResult, secondLineResult],
           [-1, firstLineResult, secondLineResult],
           [-1, firstLineResult, secondLineResult]
-        ]
+        ];
         break;
 
       case 3:
@@ -155,7 +155,7 @@ export default class GameManager extends cc.Component {
           [firstLineResult, -1, secondLineResult],
           [firstLineResult, -1, secondLineResult],
           [firstLineResult, -1, secondLineResult]
-        ]
+        ];
         break;
     }
 
