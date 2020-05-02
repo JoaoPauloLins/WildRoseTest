@@ -2,10 +2,14 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class Tile extends cc.Component {
+  @property({ type: cc.Node })
+  public glow: cc.Node = null; // Skeleton animation node
+
   @property({ type: [cc.SpriteFrame], visible: true })
   private textures = [];
 
   async onLoad(): Promise<void> {
+    this.glow.active = false;
     await this.loadTextures();
   }
 
@@ -24,8 +28,9 @@ export default class Tile extends cc.Component {
     });
   }
 
-  setTile(index: number): void {
+  setTile(index: number, isGlowing: boolean = false): void {
     this.node.getComponent(cc.Sprite).spriteFrame = this.textures[index];
+    this.glow.active = isGlowing; // Show or hide the animation
   }
 
   setRandom(): void {

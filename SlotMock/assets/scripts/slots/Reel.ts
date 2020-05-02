@@ -69,7 +69,7 @@ export default class Reel extends cc.Component {
       }
 
       if (pop != null && pop >= 0) {
-        el.getComponent('Tile').setTile(pop);
+        el.getComponent('Tile').setTile(pop, true); // When the tile is not random, turn on the glow animation
       } else {
         el.getComponent('Tile').setRandom();
       }
